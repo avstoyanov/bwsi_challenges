@@ -1,0 +1,5 @@
+intro_python:
+    sec{read_example_1e5c5da85ec13ac8}
+    b'embsec{write_example_9fc0d5fb1522d51b}\n'
+
+intro_c
