@@ -2,4 +2,6 @@ intro_python:
     sec{read_example_1e5c5da85ec13ac8}
     b'embsec{write_example_9fc0d5fb1522d51b}\n'
 
-intro_c
+review_python:
+    b'embsec{splitting_integers_09f5cdae0982af57}\n'
+    
