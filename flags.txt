@@ -4,4 +4,9 @@ intro_python:
 
 review_python:
     b'embsec{splitting_integers_09f5cdae0982af57}\n'
-    
+    b'embsec{skeleton_script_e2bdbd731264624c}\n'
+
+protocol_lab:
+    b'embsec{sending_data_5928719f935fe5c8}\n'
+    embsec{heartbeat_5bf36ff0ee948d82}\n'
+    embsec{noise_433c6abceb21673c}\n'
