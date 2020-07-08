@@ -4,11 +4,34 @@
 
 uint8_t isAnagram (char* str_a, char* str_b) {
     /* Your code goes here */
-    char no_space_a[50];
-    for(int i = 0; i <= strlen(str_a); i++){
-        if()
+    int in_a;
+    int i = 0;
+    while (str_a[i] != '\0'){
+        printf("outer loop");
+        if (str_a[i] != ' '){
+            
+            in_a = 0;
+            for (int j = 0; str_b[j] != '\0'; j++){
+                printf("inner loop");
+                if (str_b[j] != ' '){
+                    
+                    if (str_b[j] == str_a[i]){
+                        in_a = 1;
+                        str_b[j] = ' ';
+                        str_a[i] = ' ';
+                        break;
+                    }
+                } else{
+                    in_a = 1;
+                }
+            }
+            if (in_a == 0){
+                return 0;
+            }
+        }
+        i++;
     }
-    return 0;
+    return in_a;
 } 
 
 int main () {

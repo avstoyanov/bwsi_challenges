@@ -17,3 +17,6 @@ protocol_lab:
     b'embsec{sending_data_5928719f935fe5c8}\n'
     embsec{heartbeat_5bf36ff0ee948d82}\n'
     embsec{noise_433c6abceb21673c}\n'
+    
+flash_example:
+    b'embsec{flash_example_0582c2b3723ae53e}\n'
