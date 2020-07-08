@@ -4,6 +4,9 @@ intro_python:
 
 intro_c:
     b'embsec{read_example_1e5c5da85ec13ac8}\n'
+
+review_c:
+    b'embsec{int_to_bin_2271922386794a9f}\n'
     
 review_python:
     b'embsec{splitting_integers_09f5cdae0982af57}\n'
