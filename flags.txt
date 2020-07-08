@@ -2,9 +2,13 @@ intro_python:
     sec{read_example_1e5c5da85ec13ac8}
     b'embsec{write_example_9fc0d5fb1522d51b}\n'
 
+intro_c:
+    b'embsec{read_example_1e5c5da85ec13ac8}\n'
+    
 review_python:
     b'embsec{splitting_integers_09f5cdae0982af57}\n'
     b'embsec{skeleton_script_e2bdbd731264624c}\n'
+    b'embsec{integer_flipping_874509ccbfbd8fa4}\n'
 
 protocol_lab:
     b'embsec{sending_data_5928719f935fe5c8}\n'
