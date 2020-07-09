@@ -1,35 +1,35 @@
 #include <stdio.h>
 #include <stdint.h>
 #include "uart.h"
-
+// IMPORTANT!!!! THIS DOES NOT CHECK WEATHER VALUES IN STR_B EXIST IN A. 
+// THIS MEANS THAT IT ONLY WORKS FOR EQUAL-LENGTHED STRINGS IGNORING SPACES. SO "A V B E D S" AND "ABDFSD" WOULD BE FALSE, BUT "ADF ES" AND "ASDFEY" WOULD BE TRUE.
 uint8_t isAnagram (char* str_a, char* str_b) {
     /* Your code goes here */
     int in_a;
-    int i = 0;
-    while (str_a[i] != '\0'){
-        printf("outer loop");
+    for (int i = 0; str_a[i] != '\0'; i++){
+        //printf("outer loop");
         if (str_a[i] != ' '){
             
-            in_a = 0;
+           // in_a = 0;
             for (int j = 0; str_b[j] != '\0'; j++){
-                printf("inner loop");
-                if (str_b[j] != ' '){
+                //printf("inner loop");
+               // if (str_b[j] != ' '){
                     
                     if (str_b[j] == str_a[i]){
                         in_a = 1;
                         str_b[j] = ' ';
-                        str_a[i] = ' ';
                         break;
                     }
-                } else{
-                    in_a = 1;
-                }
+                    in_a = 0;
+                    
+//                 } else{
+//                     in_a = 2;
+               // }
             }
             if (in_a == 0){
-                return 0;
+                return in_a;
             }
         }
-        i++;
     }
     return in_a;
 } 
