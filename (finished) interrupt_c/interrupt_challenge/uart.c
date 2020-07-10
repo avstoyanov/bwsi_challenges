@@ -30,6 +30,7 @@ void uart_init(uint8_t uart)
       UART0_FBRD_R |= 0x36;
       UART0_LCRH_R &= ~(UART_LCRH_WLEN_M); // Set 8-bit word
       UART0_LCRH_R |= UART_LCRH_WLEN_8;
+      UART0_IM_R |= UART_IM_RXIM; // enable interrupts
       UART0_CTL_R |= UART_CTL_UARTEN; // Enable UART
       break;
     case UART1:
@@ -156,5 +157,10 @@ void uart_write_hex(uint8_t uart, uint32_t data) {
 void UART0_IRQHandler(void)
 {
   // Implement Me!!
+  UART0_ICR_R |= UART_ICR_RXIC; 
+  int success; 
+  if (uart_read(UART0, 1, &success) == 0x20) { 
+    SysCtlReset();
+  } 
 }
     

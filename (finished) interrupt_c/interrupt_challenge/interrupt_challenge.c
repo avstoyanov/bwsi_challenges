@@ -19,9 +19,12 @@ int main() {
 
 
   // Initialize!!
+  uart_init(UART0);
   // Enable UART0 Interrupt!!
+  IntEnable(INT_UART0);
   // Enable Interrupts!!
-
+  IntMasterEnable();
+    
   uart_write_str(UART2, "Device is booted!\n");
 
   // Initialize flag buffer

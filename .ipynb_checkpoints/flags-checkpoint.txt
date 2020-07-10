@@ -1,19 +1,34 @@
-intro_python:
+intro_python: 2/2
     sec{read_example_1e5c5da85ec13ac8}
     b'embsec{write_example_9fc0d5fb1522d51b}\n'
 
-intro_c:
+intro_c: 2/2
     b'embsec{read_example_1e5c5da85ec13ac8}\n'
+    b'embsec{write_example_9fc0d5fb1522d51b}\n'
 
-review_c:
+review_c: 2/2
     b'embsec{int_to_bin_2271922386794a9f}\n'
-    
-review_python:
+    b'embsec{anagram_46b3112a90f427a7}\n'
+ 
+review_python: 3/3
     b'embsec{splitting_integers_09f5cdae0982af57}\n'
     b'embsec{skeleton_script_e2bdbd731264624c}\n'
     b'embsec{integer_flipping_874509ccbfbd8fa4}\n'
 
-protocol_lab:
+protocol_lab: 3/4
     b'embsec{sending_data_5928719f935fe5c8}\n'
     embsec{heartbeat_5bf36ff0ee948d82}\n'
     embsec{noise_433c6abceb21673c}\n'
+    
+flash_example: 1/1
+    b'embsec{flash_example_0582c2b3723ae53e}\n'
+    
+design: 2/2
+    b'embsec{fw_protect_1bde280499315e29}\n'
+    b'embsec{fw_update_2316313f222d900f}\n'
+
+interrupt_c: 1/1
+    b'embsec{interrupt_challenge_31f363c79e9ac609}\n'
+
+uart_c: 1/1
+    b'embsec{uart_challenge_ce35bdf5f93983fd}\n'
