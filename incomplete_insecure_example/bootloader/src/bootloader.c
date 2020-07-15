@@ -234,9 +234,11 @@ void boot_firmware(void)
     // No firmware installed. Return to main
     return;
   }
-
+    char* release_mess_addr = fw_size_address + fw_size + 2;
   // TODO: Print release message
-    
+    uart_write_str(UART2, release_mess);
+        
+    }
   // TODO: Boot the firmware
 
 }

@@ -32,3 +32,12 @@ interrupt_c: 1/1
 
 uart_c: 1/1
     b'embsec{uart_challenge_ce35bdf5f93983fd}\n'
+    
+aes_python 2/3
+    b'embsec{aes_decrypt_02b54da04b84aa21}\n'
+    b'embsec{aes_encrypt_file_b0459825680d9cec}\n'
+
+aes_c: 0/3
+
+hmac_py: 1/2
+    b'embsec{hmac_generate_6540170fb964cd46}\n'
