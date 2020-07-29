@@ -41,3 +41,7 @@ aes_c: 0/3
 
 hmac_py: 1/2
     b'embsec{hmac_generate_6540170fb964cd46}\n'
+    
+one_time_pad: 2/2
+    b'embsec{xor_055a1d778a799ca6}\n'
+    b'embsec{two_time_pad_87e6fdcedc703d19}\n'
